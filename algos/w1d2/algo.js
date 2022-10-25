@@ -21,8 +21,6 @@ function bubbleSort(arr) {
 }
 
 console.log(bubbleSort([78, 5, 678, 765, 456, 78, 265, 908]))
-//                              i
-//                                             j   j+1
 
 
 // Time Complexity
@@ -46,8 +44,22 @@ console.log(bubbleSort([78, 5, 678, 765, 456, 78, 265, 908]))
 // This continues until all values are sorted.
 
 function selectionSort(arr) {
-
+    for (let i = 0; i < arr.length; i++) {
+        let min = i;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[min] > arr[j]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
 }
+
+console.log(selectionSort([78, 5, 678, 765, 456, 78, 265, 908]))
+
 
 // Time Complexity
 //   - Best: O(n^2)
