@@ -20,7 +20,7 @@ function bubbleSort(arr) {
     return arr;
 }
 
-console.log(bubbleSort([78, 5, 678, 765, 456, 78, 265, 908]))
+// console.log(bubbleSort([78, 5, 678, 765, 456, 78, 265, 908]))
 
 
 // Time Complexity
@@ -58,7 +58,7 @@ function selectionSort(arr) {
     return arr;
 }
 
-console.log(selectionSort([78, 5, 678, 765, 456, 78, 265, 908]))
+// console.log(selectionSort([78, 5, 678, 765, 456, 78, 265, 908]))
 
 
 // Time Complexity
