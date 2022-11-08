@@ -2,7 +2,7 @@ const Song = require('../models/song.model');
 
 module.exports.findAllSongs = (req, res) => {
     Song.find()
-        .then(songs => res.json({allSongs: songs}))
+        .then(songs => res.json(songs))
         .catch(err => res.json({error: err}))
 }
 
@@ -31,6 +31,8 @@ module.exports.findOneSongAndDelete = (req, res) => {
 }
 
 module.exports.findRandomSong = (req, res) => {
+
+    // ??
     Song.find()
         .then(songs => {
             const randomSongIndex = Math.floor(Math.random() * songs.length);
