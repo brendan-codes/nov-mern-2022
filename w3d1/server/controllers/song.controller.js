@@ -31,8 +31,6 @@ module.exports.findOneSongAndDelete = (req, res) => {
 }
 
 module.exports.findRandomSong = (req, res) => {
-
-    // ??
     Song.find()
         .then(songs => {
             const randomSongIndex = Math.floor(Math.random() * songs.length);
