@@ -1,12 +1,3 @@
-// const mongoose = require('mongoose');
-// const ModelSchema = new mongoose.Schema({
-//     // firstName: { type: String },
-//     // lastName: { type: String }
-// }, { timestamps: true });
-
-// module.exports.Model = mongoose.model('Model', ModelSchema);
-
-
 const mongoose = require("mongoose");
 
 const SundaeSchema = new mongoose.Schema({
@@ -29,4 +20,5 @@ const SundaeSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-module.exports.Sundae = mongoose.model("Sundae", SundaeSchema);
+const Sundae = mongoose.model("Sundae", SundaeSchema);
+module.exports = Sundae;
